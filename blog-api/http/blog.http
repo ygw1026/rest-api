@@ -1,0 +1,34 @@
+### 블로그 등록
+
+POST http://localhost:8100/api/blog/blogs
+Content-Type: application/json
+Accept: application/json
+
+{
+  "blogFid": "nhnacademy",
+  "blogName": "nhnacademyBlog",
+  "blogNickname": "nick",
+  "blogDescription": "blogDescription"
+}
+
+### 블로그 조회
+
+GET http://localhost:8100/api/blog/blogs/1
+Accept: application/xml
+
+### 블로그 수정
+
+PUT http://localhost:8100/api/blog/blogs/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "blogNickname": "updatedNickname",
+  "blogName": "updatedBlogName",
+  "blogDescription": "updatedDes",
+  "blogIsPublic": true
+}
+
+### 블로그 삭제
+
+DELETE http://localhost:8100/api/blog/blogs/1

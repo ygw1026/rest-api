@@ -1,0 +1,33 @@
+POST http://localhost:8100/api/blog/blogs/1/posts
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "제목입니다.",
+  "content": "내용입니다."
+}
+
+###
+
+GET http://localhost:8100/api/blog/blogs/1/posts/1
+Accept: application/xml
+
+###
+
+PUT http://localhost:8100/api/blog/blogs/1/posts/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "content": "제목 수정입니다.",
+  "title": "내용 수정입니다."
+}
+
+###
+
+DELETE http://localhost:8100/api/blog/blogs/1/posts/1
+
+###
+
+GET http://localhost:8100/api/blog/blogs/1/posts?page=1
+Accept: application/json
